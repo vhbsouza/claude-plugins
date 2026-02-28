@@ -1,0 +1,26 @@
+{
+  "name": "claude-plugins",
+  "owner": {
+    "name": "Victor Souza"
+  },
+  "metadata": {
+    "description": "A plugin marketplace for Claude Code and Cowork. A miscellaneous collection of tools covering productivity, engineering, memory, and more.",
+    "version": "1.0.0",
+    "pluginRoot": "."
+  },
+  "plugins": [
+    {
+      "name": "session-memory",
+      "source": "./session-memory",
+      "description": "Structured memory system for Claude Code and Cowork projects. Scaffolds five layers: CLAUDE.md, MEMORY.md, .claude/rules/, snapshots/, and docs/.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Victor Souza"
+      },
+      "license": "MIT",
+      "category": "productivity",
+      "tags": ["memory", "context", "versioning", "project-setup", "knowledge-management"],
+      "keywords": ["memory", "context", "versioning", "project-setup", "knowledge-management"]
+    }
+  ]
+}

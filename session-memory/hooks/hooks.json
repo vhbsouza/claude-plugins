@@ -1,0 +1,24 @@
+{
+  "hooks": [
+    {
+      "event": "SessionStart",
+      "hooks": [
+        {
+          "type": "prompt",
+          "prompt": "A new session has started. Check if the memory system is set up by looking for CLAUDE.md and MEMORY.md in the workspace root. If they exist, read both files to load project context. Also read the 'Current Status' and 'Priority Pending Items' sections of MEMORY.md so you are aware of the project state and what needs to be done. Do NOT output anything to the user about this — just silently load the context. If CLAUDE.md doesn't exist, do nothing (the memory system isn't set up for this project).",
+          "timeout": 30
+        }
+      ]
+    },
+    {
+      "event": "Stop",
+      "hooks": [
+        {
+          "type": "prompt",
+          "prompt": "Before ending, check if MEMORY.md exists in the workspace root. If it does, evaluate whether this session had significant changes (new files created, decisions made, knowledge added, tasks completed). If yes, remind the user: 'This session had significant changes. Consider running /update-memory to save context.' If no significant changes occurred, do nothing.",
+          "timeout": 15
+        }
+      ]
+    }
+  ]
+}

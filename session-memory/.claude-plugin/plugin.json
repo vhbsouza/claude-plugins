@@ -1,0 +1,16 @@
+{
+  "name": "session-memory",
+  "version": "0.1.0",
+  "description": "Structured memory system for Claude Code and Cowork projects. Scaffolds five layers: CLAUDE.md (index), MEMORY.md (working memory), .claude/rules/ (long-term knowledge), snapshots/ (versioning), and docs/ (reference). Includes commands, skills, and hooks for the full session lifecycle. Inspired by official Anthropic best practices.",
+  "author": {
+    "name": "Victor Souza"
+  },
+  "keywords": [
+    "memory",
+    "context",
+    "versioning",
+    "project-setup",
+    "knowledge-management"
+  ],
+  "license": "MIT"
+}
